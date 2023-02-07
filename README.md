@@ -3,6 +3,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## What u need to install to run this project?
 
-In the project directory, you can run:
-
+To run this project, you have to install some requirements:
 ### 1. `npm start`
