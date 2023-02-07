@@ -6,4 +6,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 To run this project, you have to install some requirements:
 
-# 1. `React-Bootstrap`
+### 1. Create-React-App
