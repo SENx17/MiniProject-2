@@ -1,0 +1,40 @@
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.carousel:hover > .carousel-control-prev,
+.carousel:hover > .carousel-control-next {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.563);
+  position: absolute;
+  top: 50%;
+  margin: 0 20px 0 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+  position: relative;
+  top: 21%;
+  right: 3%;
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-control-next-icon {
+  position: relative;
+  top: 21%;
+  left: 3%;
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-indicators {
+  display: none;
+}

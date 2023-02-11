@@ -6,7 +6,7 @@ import LoginContainer from "./container/LoginContainer";
 function App() {
   return (
     <div>
-      <LoginContainer />
+      <HomeContainer />
     </div>
   );
 }

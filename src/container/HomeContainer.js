@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
+import CardHome from "../component/HomeComponent/CardHome";
 import CarouselHome from "../component/HomeComponent/CarouselHome";
 import NavbarComponent from "../component/NavbarComponent/NavbarComponent";
 
-class HomeContainer extends Component {
-  render() {
-    return (
-      <>
-        <NavbarComponent home="Home" profile="Profile" logout="logout" />
-        <CarouselHome />
-      </>
-    );
-  }
-}
+const HomeContainer = () => {
+  return (
+    <>
+      <NavbarComponent home="Home" profile="Profile" logout="logout" />
+      <CarouselHome />
+      <CardHome />
+    </>
+  );
+};
 
 export default HomeContainer;

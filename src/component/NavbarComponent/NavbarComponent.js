@@ -6,7 +6,7 @@ import Logo from "./image/Logo.svg";
 const NavbarComponent = (props) => {
   return (
     <>
-      <Navbar collapseOnSelect bg="dark" variant="dark" fixed="top">
+      <Navbar collapseOnSelect bg="dark" variant="dark" sticky="top">
         <Container>
           <Navbar.Brand>
             <Image
