@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Navbar, Nav, Image } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import "./NavbarComponent.css";
-import Logo from "./image/Logo.svg";
 
 const NavbarComponent = (props) => {
   return (
@@ -9,12 +8,14 @@ const NavbarComponent = (props) => {
       <Navbar collapseOnSelect bg="dark" variant="dark" sticky="top">
         <Container>
           <Navbar.Brand>
-            <Image
-              src={Logo}
-              width={80}
-              height={35}
-              style={{ background: "white" }}
-            />
+            <h2
+              style={{
+                fontFamily: "monospace",
+                fontWeight: "bolder",
+              }}
+            >
+              Unamed
+            </h2>
           </Navbar.Brand>
           <Nav>
             <Nav.Link className="home" href="#">

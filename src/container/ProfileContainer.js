@@ -8,12 +8,9 @@ const ProfileContainer = () => {
   return (
     <>
       <NavbarComponent home="Home" profile="Profile" logout="logout" />
-      <div className="profileContent-container d-flex justify-content-center align-items-center">
-        <div className="d-flex flex-column gap-2">
-          <ThumbnailComponent />
-          <CardComponent />
-          <CardComponent />
-        </div>
+      <div className="profileContent-container">
+        <ThumbnailComponent />
+        <CardComponent />
       </div>
     </>
   );

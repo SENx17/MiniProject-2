@@ -6,19 +6,25 @@ import "./CardComponent.css";
 const CardComponent = () => {
   return (
     <>
-      <div className="card-container">
-        <Card style={{ width: "40rem", height: "12rem" }}>
-          <Card.Body>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Subtitle className="mb-5 text-muted">
-              Card Subtitle
-            </Card.Subtitle>
-            <Card.Title>Card Title</Card.Title>
-            <Card.Subtitle className="mb-5 text-muted">
-              Card Subtitle
-            </Card.Subtitle>
-          </Card.Body>
-        </Card>
+      <div className="d-flex justify-content-center">
+        <div className="d-flex flex-column  gap-3">
+          <div className="card-container">
+            <div className="cardProfile-wrapper d-flex flex-column justify-content-center ms-4">
+              <Card.Title>TEST</Card.Title>
+              <Card.Text className="text-muted mb-4">Testing</Card.Text>
+              <Card.Title>TEST</Card.Title>
+              <Card.Text className="text-muted">Testing</Card.Text>
+            </div>
+          </div>
+          <div className="card-container">
+            <div className="cardProfile-wrapper d-flex flex-column justify-content-center ms-4">
+              <Card.Title>TEST</Card.Title>
+              <Card.Text className="text-muted mb-4">Testing</Card.Text>
+              <Card.Title>TEST</Card.Title>
+              <Card.Text className="text-muted">Testing</Card.Text>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

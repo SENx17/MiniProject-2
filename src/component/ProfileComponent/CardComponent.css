@@ -1,1 +1,11 @@
+.card-container {
+  width: 35rem;
+  height: 12rem;
+  background-color: white;
+  border-radius: 1.5rem;
+}
 
+.cardProfile-wrapper {
+  width: 35rem;
+  height: 12rem;
+}

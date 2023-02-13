@@ -4,4 +4,10 @@
   background-color: rgb(71, 78, 85);
   padding: 3rem 2rem;
   width: 28rem;
+  margin-top: 17vh;
+  margin-bottom: 17vh;
+}
+
+.err-content {
+  height: 15px;
 }

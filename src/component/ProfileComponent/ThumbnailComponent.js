@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "react-bootstrap";
 // import Axios from "axios";
-import "./CardComponent.css";
+import "./ThumbnailComponent.css";
 
 const ThumbnailComponent = () => {
   return (
@@ -16,7 +16,7 @@ const ThumbnailComponent = () => {
             />
           </div>
           <div className="d-flex justify-content-center">
-            <h3 className="text-white">Username</h3>
+            <h3 className="text-white">Profile User</h3>
           </div>
         </div>
       </div>

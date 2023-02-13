@@ -8,7 +8,9 @@ const HomeContainer = () => {
     <>
       <NavbarComponent home="Home" profile="Profile" logout="logout" />
       <CarouselHome />
-      <CardHome />
+      <div className="homeContent-container">
+        <CardHome />
+      </div>
     </>
   );
 };

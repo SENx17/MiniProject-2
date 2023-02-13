@@ -1,13 +1,12 @@
 import React from "react";
 import LoginForm from "../component/LoginComponent/LoginForm";
 import NavbarComponent from "../component/NavbarComponent/NavbarComponent";
-import "./LoginContainer.css";
 
 const LoginContainer = () => {
   return (
     <>
-      <NavbarComponent />
-      <div className="loginContent-container d-flex justify-content-center align-items-center">
+      <NavbarComponent home="" profile="" logout="" />
+      <div className="d-flex justify-content-center">
         <LoginForm />
       </div>
     </>
