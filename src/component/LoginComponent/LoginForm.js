@@ -23,11 +23,8 @@ const LoginForm = () => {
     }),
     onSubmit: (values) => {
       setIsLoading(true);
-
       axios({
         method: "get",
-        // kalo pake string 1 petik
-        // url: 'https://api.themoviedb.org/3/authentication/token/new?api_key=' + API_KEY,
         url: `https://api.themoviedb.org/3/authentication/token/new?api_key=${process.env.REACT_APP_APIKEY}`,
       })
         .then(function (response) {
