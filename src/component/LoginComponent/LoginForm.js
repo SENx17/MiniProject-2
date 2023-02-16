@@ -110,7 +110,7 @@ const LoginForm = () => {
             </Form.Text>
           </div>
         </Form.Group>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center gap-4">
           <Button
             variant="primary px-4 py-2"
             type="submit"
