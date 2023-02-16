@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/login" element={<LoginContainer />} />
-        <Route path="/" element={<HomeContainer />} />
+        <Route path="/home" element={<HomeContainer />} />
         <Route path="/profile" element={<ProfileContainer />} />
       </Routes>
     </Router>
