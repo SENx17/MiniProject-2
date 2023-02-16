@@ -7,8 +7,11 @@ const HomeContainer = () => {
   return (
     <>
       <NavbarComponent home="Home" profile="Profile" logout="logout" />
-      <CarouselHome />
-      <div className="homeContent-container">
+      <div
+        className="homeContent-container"
+        style={{ position: "absolute", top: "70px" }}
+      >
+        <CarouselHome />
         <CardHome />
       </div>
     </>

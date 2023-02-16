@@ -5,7 +5,7 @@ import "./NavbarComponent.css";
 const NavbarComponent = (props) => {
   return (
     <>
-      <Navbar collapseOnSelect bg="dark" variant="dark" sticky="top">
+      <Navbar collapseOnSelect bg="dark" variant="dark" fixed="top">
         <Container>
           <Navbar.Brand>
             <h2
@@ -18,10 +18,10 @@ const NavbarComponent = (props) => {
             </h2>
           </Navbar.Brand>
           <Nav>
-            <Nav.Link className="home" href="#">
+            <Nav.Link className="home" href="/">
               {props.home}
             </Nav.Link>
-            <Nav.Link className="profile" href="#">
+            <Nav.Link className="profile" href="/profile">
               {props.profile}
             </Nav.Link>
           </Nav>

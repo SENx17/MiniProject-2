@@ -1,29 +1,33 @@
-import React from "react";
-import { Card } from "react-bootstrap";
-// import Axios from "axios";
+import React, { useState, useEffect } from "react";
+import { Card, Row, Col } from "react-bootstrap";
+import Axios from "axios";
+import { getProfileDetail } from "../../api/ProfileAPI";
 import "./CardComponent.css";
 
 const CardComponent = () => {
+  const [profileDetail, setProfileDetail] = useState("");
+
+  useEffect(() => {
+    getProfileDetail().then((results) => {
+      setProfileDetail(results);
+    });
+  }, []);
   return (
     <>
       <div className="d-flex justify-content-center">
-        <div className="d-flex flex-column  gap-3">
-          <div className="card-container">
-            <div className="cardProfile-wrapper d-flex flex-column justify-content-center ms-4">
-              <Card.Title>TEST</Card.Title>
-              <Card.Text className="text-muted mb-4">Testing</Card.Text>
-              <Card.Title>TEST</Card.Title>
-              <Card.Text className="text-muted">Testing</Card.Text>
-            </div>
-          </div>
-          <div className="card-container">
-            <div className="cardProfile-wrapper d-flex flex-column justify-content-center ms-4">
-              <Card.Title>TEST</Card.Title>
-              <Card.Text className="text-muted mb-4">Testing</Card.Text>
-              <Card.Title>TEST</Card.Title>
-              <Card.Text className="text-muted">Testing</Card.Text>
-            </div>
-          </div>
+        <div className="card-container text-center d-flex justify-content-center align-items-center">
+          <Row className="gap-5">
+            <Col xs={12}>
+              <Card.Title>Username</Card.Title>
+              <Card.Text className="text-muted">
+                {profileDetail.username}
+              </Card.Text>
+            </Col>
+            <Col xs={12}>
+              <Card.Title>Account Name</Card.Title>
+              <Card.Text className="text-muted">{profileDetail.name}</Card.Text>
+            </Col>
+          </Row>
         </div>
       </div>
     </>

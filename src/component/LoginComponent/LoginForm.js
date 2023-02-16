@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./LoginForm.css";
 import axios from "axios";
@@ -9,7 +9,7 @@ import { useFormik } from "formik";
 
 const errorStyle = { color: "red", fontSize: "12px" };
 const LoginForm = () => {
-  // const navigate = useNavigate
+  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
 
   const formik = useFormik({
@@ -53,8 +53,8 @@ const LoginForm = () => {
                   console.log(session_id);
                   if (session_id) {
                     localStorage.setItem("SID", session_id);
-                    // redirect ke halaman user profile/home/timeline
-                    // alert("Berhasil login dengan session id: " + session_id)
+                    alert("Berhasil login dengan session id: " + session_id);
+                    navigate("/profile");
                   }
                   setIsLoading(false);
                 })
@@ -77,7 +77,7 @@ const LoginForm = () => {
   return (
     <>
       <Form className="form-style" onSubmit={formik.handleSubmit}>
-        <h2 className="text-center fw-bolder text-white mb-4">Sign in</h2>
+        <h2 className="text-center fw-bolder text-white mb-4">SignIn</h2>
         <Form.Group className="mb-3" controlId="username">
           <Form.Label className="text-white">Username</Form.Label>
           <Form.Control

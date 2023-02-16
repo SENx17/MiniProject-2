@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Card, Col, Row, Button } from "react-bootstrap";
 import "./CardHome.css";
 import { getListMovies } from "../../api/MoviesAPI";
+import ModalHome from "./ModalHome";
 
 function CardHome() {
   const [movies, setMovies] = useState([]);
+  const [modalShow, setModalShow] = useState(false);
 
   useEffect(() => {
     getListMovies().then((result) => {
@@ -26,7 +28,15 @@ function CardHome() {
                   {movie.title}
                 </Card.Title>
                 <div className="d-flex justify-content-center mt-5">
-                  <Button variant="light">Details</Button>
+                  <Button variant="light" onClick={() => setModalShow(true)}>
+                    Details
+                  </Button>
+                  {/* Modal */}
+                  <ModalHome
+                    show={modalShow}
+                    onHide={() => setModalShow(false)}
+                  />
+                  {/* Modal */}
                 </div>
               </Card.Body>
             </Card>

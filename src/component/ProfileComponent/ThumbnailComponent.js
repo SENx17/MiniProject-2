@@ -15,7 +15,7 @@ const ThumbnailComponent = () => {
               height={100}
             />
           </div>
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center mb-4">
             <h3 className="text-white">Profile User</h3>
           </div>
         </div>
