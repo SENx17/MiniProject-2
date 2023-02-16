@@ -25,3 +25,7 @@ To run this project, you have to install some requirements:
 ### 5. Formik
 
 #### Run this command `npm install formik`
+
+### 6. React Router Dom
+
+#### Run this command `npm install react-router-dom`

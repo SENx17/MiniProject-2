@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Card, Row, Col } from "react-bootstrap";
-import Axios from "axios";
 import { getProfileDetail } from "../../api/ProfileAPI";
 import "./CardComponent.css";
 
