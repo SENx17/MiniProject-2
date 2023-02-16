@@ -33,7 +33,7 @@ const NavbarComponent = (props) => {
               className="logout"
               onClick={() => {
                 localStorage.removeItem("SID");
-                navigate("/login");
+                navigate("/");
               }}
             >
               {props.logout}
