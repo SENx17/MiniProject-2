@@ -21,7 +21,7 @@ const NavbarComponent = (props) => {
             </h2>
           </Navbar.Brand>
           <Nav>
-            <Nav.Link className="home" href="/">
+            <Nav.Link className="home" href="/home">
               {props.home}
             </Nav.Link>
             <Nav.Link className="profile" href="/profile">
